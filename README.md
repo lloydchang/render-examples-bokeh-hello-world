@@ -6,4 +6,14 @@ The app in this repo isn't deployed at [https://bokeh.onrender.com](https://boke
 
 ## Deployment
 
-For now, follow the guide at https://render.com/docs/deploy-flask.
+For now, mostly follow the guide at https://render.com/docs/deploy-flask.
+
+Please change **Start Command** as follows:
+
+**Change from:**
+
+> **Start Command** `gunicorn app:app`
+
+**Change to:**
+
+> **Start Command**	`bokeh serve --show myapp.py --port 8000`
